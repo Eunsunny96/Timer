@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SSa-hs-6eG">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="mfy-sY-KJi">
+            <objects>
+                <tabBarController id="SSa-hs-6eG" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Vf-xv-HiC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="systemGrayColor"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.82347938308009394" green="0.24229035537950747" blue="0.49618551196887967" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="u3h-fD-fq1" kind="relationship" relationship="viewControllers" id="C8m-wq-lGx"/>
+                        <segue destination="kyp-tC-7Jo" kind="relationship" relationship="viewControllers" id="hov-qM-gxe"/>
+                        <segue destination="fzK-r8-H4Z" kind="relationship" relationship="viewControllers" id="Z79-T4-OAm"/>
+                        <segue destination="giy-nO-r4a" kind="relationship" relationship="viewControllers" id="ZW8-PU-fza"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fEj-IT-bEA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1903" y="45"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Kf7-je-kPI">
+            <objects>
+                <viewController id="V69-nO-zjR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fp3-aU-cv0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="M5o-NE-Xzz">
+                                <rect key="frame" x="20" y="92" width="361" height="91.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SETP 1. 실온에 계란을 30분 ~ 1시간 놔두세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RrR-D5-iFv">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 2.  계란을 넣고 95% 잠길정로 물을 넣어주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRM-8g-QS0">
+                                        <rect key="frame" x="0.0" y="35.5" width="361" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP3 .  식초 1큰술, 소금 1큰술을 넣어주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x48-Ih-1rx">
+                                        <rect key="frame" x="0.0" y="71" width="361" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BoilingWaterWithEgg" translatesAutoresizingMaskIntoConstraints="NO" id="JWP-GR-0ls">
+                                <rect key="frame" x="68" y="215" width="269" height="323"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="323" id="zVa-e2-pRv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP4. START!! 버튼을 눌러주고 불을 강불로 켜주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEx-jf-Pab">
+                                <rect key="frame" x="14" y="556" width="377.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eS-jp-vRd">
+                                <rect key="frame" x="63" y="601" width="269" height="49"/>
+                                <color key="backgroundColor" red="0.99656456709999997" green="0.93597990269999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="f2t-Yx-u0W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="31"/>
+                                <state key="normal" title="START!!">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4cd-8K-Daj">
+                                <rect key="frame" x="20" y="687" width="349" height="91.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 5. 알람이 울리면 계란을 꺼내주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcu-0N-dCC">
+                                        <rect key="frame" x="0.0" y="0.0" width="349" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 6. 계란을 찬물에 30초 ~ 1분 담갔다 빼주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oW-a8-xmW">
+                                        <rect key="frame" x="0.0" y="35.5" width="349" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 7. 계란을 까서 맛있게 먹어주세요 !!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGD-YM-hYj">
+                                        <rect key="frame" x="0.0" y="71" width="349" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="맛있는 계란 삶는 방법 !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVM-sK-I5A">
+                                <rect key="frame" x="87" y="20" width="241" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Sf-LP-iur"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EEx-jf-Pab" firstAttribute="top" secondItem="JWP-GR-0ls" secondAttribute="bottom" constant="18" id="0hV-ud-x9x"/>
+                            <constraint firstItem="4cd-8K-Daj" firstAttribute="top" secondItem="8eS-jp-vRd" secondAttribute="bottom" constant="37" id="7Wc-QZ-Ga6"/>
+                            <constraint firstItem="M5o-NE-Xzz" firstAttribute="leading" secondItem="Fp3-aU-cv0" secondAttribute="leadingMargin" id="NJ1-7y-QPJ"/>
+                            <constraint firstItem="EEx-jf-Pab" firstAttribute="leading" secondItem="5Sf-LP-iur" secondAttribute="leading" constant="14" id="PJk-ct-nZp"/>
+                            <constraint firstItem="JWP-GR-0ls" firstAttribute="leading" secondItem="5Sf-LP-iur" secondAttribute="leading" constant="68" id="SgD-vz-qVI"/>
+                            <constraint firstItem="JWP-GR-0ls" firstAttribute="top" secondItem="M5o-NE-Xzz" secondAttribute="bottom" constant="31.5" id="UaV-CB-O8M"/>
+                            <constraint firstItem="JWP-GR-0ls" firstAttribute="centerX" secondItem="EEx-jf-Pab" secondAttribute="centerX" id="VKm-Aw-pqA"/>
+                            <constraint firstItem="sVM-sK-I5A" firstAttribute="top" secondItem="Fp3-aU-cv0" secondAttribute="top" constant="20" symbolic="YES" id="XD9-62-d76"/>
+                            <constraint firstItem="M5o-NE-Xzz" firstAttribute="top" secondItem="sVM-sK-I5A" secondAttribute="bottom" constant="40" id="aHY-cO-uPO"/>
+                            <constraint firstItem="5Sf-LP-iur" firstAttribute="trailing" secondItem="EEx-jf-Pab" secondAttribute="trailing" constant="22.5" id="cto-PP-FAg"/>
+                            <constraint firstItem="8eS-jp-vRd" firstAttribute="leading" secondItem="5Sf-LP-iur" secondAttribute="leading" constant="63" id="dHq-CC-WQM"/>
+                            <constraint firstItem="sVM-sK-I5A" firstAttribute="leading" secondItem="5Sf-LP-iur" secondAttribute="leading" constant="87" id="dmX-7O-TuO"/>
+                            <constraint firstItem="M5o-NE-Xzz" firstAttribute="leading" secondItem="4cd-8K-Daj" secondAttribute="leading" id="f5v-u2-SJ1"/>
+                            <constraint firstItem="sVM-sK-I5A" firstAttribute="centerX" secondItem="Fp3-aU-cv0" secondAttribute="centerX" id="jgL-NO-ffC"/>
+                            <constraint firstItem="8eS-jp-vRd" firstAttribute="top" secondItem="EEx-jf-Pab" secondAttribute="bottom" constant="24.5" id="qtu-BG-8yx"/>
+                            <constraint firstItem="5Sf-LP-iur" firstAttribute="trailing" secondItem="8eS-jp-vRd" secondAttribute="trailing" constant="82" id="x7E-Fs-yKe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4Z9-AL-EPY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2kZ-7e-Ssb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="674" y="142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bJw-fG-txB">
+            <objects>
+                <viewController id="wWl-92-8tv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lay-h3-dxV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="맛있는 고구마 찌는 방법 !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rG-qL-ltY">
+                                <rect key="frame" x="79" y="20" width="256" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Epx-RK-6OR">
+                                <rect key="frame" x="75" y="586" width="269" height="49"/>
+                                <color key="backgroundColor" red="0.99656456709999997" green="0.93597990269999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="3j1-2c-BLm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="31"/>
+                                <state key="normal" title="START!!">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="happySweet" translatesAutoresizingMaskIntoConstraints="NO" id="oom-mS-cDd">
+                                <rect key="frame" x="79" y="236.5" width="288" height="271"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="271" id="99o-lt-nsr"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cps-Hw-CQ4">
+                                <rect key="frame" x="20" y="113.5" width="365" height="91.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 1. 깨끗히 씻은 고구마의 양끝을 칼로 잘라주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VX-ZS-U0f">
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 2. 잘 벗겨지게 고구마의 중간에 칼집을 내주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXj-QJ-cWY">
+                                        <rect key="frame" x="0.0" y="35.5" width="365" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 3. 냄비안에 찜기안에 넣고 뚜껑을 닫아주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2h-ym-svX">
+                                        <rect key="frame" x="0.0" y="71" width="365" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP4. START!! 버튼을 눌러주고 불을 강불로 켜주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olX-ur-y6E">
+                                <rect key="frame" x="16.5" y="532.5" width="377.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="※※ 손바닥 크기의 고구마 기준입니다 ※※" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuS-61-i8V">
+                                <rect key="frame" x="73" y="59.5" width="268" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="yQC-PN-p3M">
+                                <rect key="frame" x="20" y="676" width="304.5" height="91.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 5. 알람이 울리면 불을 꺼주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Bh-pn-una">
+                                        <rect key="frame" x="0.0" y="0.0" width="304.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 6.  고구마를 꺼내주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEt-ys-Dba">
+                                        <rect key="frame" x="0.0" y="35.5" width="304.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 7. 고구마를 까서 맛있게 먹어주세요 !!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uR9-Wt-8Oa">
+                                        <rect key="frame" x="0.0" y="71" width="304.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="v0J-Ey-BYg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5rG-qL-ltY" firstAttribute="leading" secondItem="oom-mS-cDd" secondAttribute="leading" id="2VH-rt-wVW"/>
+                            <constraint firstItem="cps-Hw-CQ4" firstAttribute="leading" secondItem="Lay-h3-dxV" secondAttribute="leadingMargin" id="7HY-lr-msZ"/>
+                            <constraint firstItem="5rG-qL-ltY" firstAttribute="centerX" secondItem="FuS-61-i8V" secondAttribute="centerX" id="9p6-5Z-mqf"/>
+                            <constraint firstItem="olX-ur-y6E" firstAttribute="top" secondItem="oom-mS-cDd" secondAttribute="bottom" constant="25" id="DMg-vI-6Y1"/>
+                            <constraint firstItem="cps-Hw-CQ4" firstAttribute="leading" secondItem="yQC-PN-p3M" secondAttribute="leading" id="HCQ-iS-vwP"/>
+                            <constraint firstItem="Epx-RK-6OR" firstAttribute="leading" secondItem="v0J-Ey-BYg" secondAttribute="leading" constant="75" id="HUi-CD-Xgh"/>
+                            <constraint firstItem="yQC-PN-p3M" firstAttribute="top" secondItem="Epx-RK-6OR" secondAttribute="bottom" constant="41" id="QAT-1K-FU7"/>
+                            <constraint firstItem="5rG-qL-ltY" firstAttribute="centerX" secondItem="Lay-h3-dxV" secondAttribute="centerX" id="RjB-Y9-N46"/>
+                            <constraint firstItem="5rG-qL-ltY" firstAttribute="leading" secondItem="v0J-Ey-BYg" secondAttribute="leading" constant="79" id="drV-mL-PmL"/>
+                            <constraint firstItem="v0J-Ey-BYg" firstAttribute="trailing" secondItem="Epx-RK-6OR" secondAttribute="trailing" constant="70" id="h7y-hS-c6Z"/>
+                            <constraint firstItem="v0J-Ey-BYg" firstAttribute="trailing" secondItem="oom-mS-cDd" secondAttribute="trailing" constant="47" id="jfv-Tv-7rE"/>
+                            <constraint firstItem="FuS-61-i8V" firstAttribute="top" secondItem="5rG-qL-ltY" secondAttribute="bottom" constant="8" symbolic="YES" id="n0Y-IH-YjN"/>
+                            <constraint firstItem="olX-ur-y6E" firstAttribute="trailing" secondItem="Lay-h3-dxV" secondAttribute="trailingMargin" id="rMm-r5-M5R"/>
+                            <constraint firstItem="cps-Hw-CQ4" firstAttribute="top" secondItem="FuS-61-i8V" secondAttribute="bottom" constant="33.5" id="rsY-CA-b3E"/>
+                            <constraint firstItem="oom-mS-cDd" firstAttribute="top" secondItem="cps-Hw-CQ4" secondAttribute="bottom" constant="31.5" id="ryi-0X-z1b"/>
+                            <constraint firstItem="5rG-qL-ltY" firstAttribute="top" secondItem="Lay-h3-dxV" secondAttribute="top" constant="20" symbolic="YES" id="z7l-da-kgP"/>
+                            <constraint firstItem="Epx-RK-6OR" firstAttribute="top" secondItem="olX-ur-y6E" secondAttribute="bottom" constant="33" id="zdA-Th-OZh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D2T-bK-5E9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="674" y="1557"/>
+        </scene>
+        <!--계란 삶기 반숙 1-->
+        <scene sceneID="dtF-Hd-8C0">
+            <objects>
+                <viewController id="u3h-fD-fq1" userLabel="계란 삶기 반숙 1" customClass="ViewController" customModule="Timger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="drf-Tl-yhv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="WxH-c3-zfi">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="UTj-ON-RS7">
+                                <rect key="frame" x="20" y="104" width="374" height="494.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UTj-ON-RS7" secondAttribute="height" multiplier="3:4" constant="3" id="7Wx-LV-MF4"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fe0-80-cYH">
+                                <rect key="frame" x="30" y="44" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="j9m-WS-dfj"/>
+                                    <constraint firstAttribute="width" constant="40" id="w3t-Oa-QOE"/>
+                                </constraints>
+                                <state key="normal" image="idea"/>
+                                <connections>
+                                    <segue destination="V69-nO-zjR" kind="presentation" id="fg1-ox-Jin"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qxb-kV-LO8">
+                                <rect key="frame" x="143.5" y="606" width="127.5" height="60.5"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="53"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBL-7h-gEw">
+                                <rect key="frame" x="70" y="674" width="274" height="53"/>
+                                <color key="backgroundColor" red="0.99656456709999997" green="0.93597990269999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="31"/>
+                                <state key="normal" title="START!!">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonTapped:" destination="u3h-fD-fq1" eventType="touchUpInside" id="Wg7-2b-qM4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxt-B4-4MG">
+                                <rect key="frame" x="70" y="731" width="130" height="53"/>
+                                <color key="backgroundColor" red="0.068906702099999995" green="0.022085538129999999" blue="0.97287529709999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="31"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pauseButtonTapped:" destination="u3h-fD-fq1" eventType="touchUpInside" id="0NA-Fi-FEm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFc-OR-BKw">
+                                <rect key="frame" x="214" y="730" width="130" height="53"/>
+                                <color key="backgroundColor" red="0.93437337880000004" green="0.037854507570000001" blue="0.081797920169999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="NqW-Lr-As6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="31"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.99990183119999998" green="1" blue="0.99987989659999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButtonTapped:" destination="u3h-fD-fq1" eventType="touchUpInside" id="fpo-0M-dHn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="H4l-Eu-Mxv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cxt-B4-4MG" firstAttribute="top" secondItem="jBL-7h-gEw" secondAttribute="bottom" constant="4" id="9XS-bE-HFV"/>
+                            <constraint firstItem="Qxb-kV-LO8" firstAttribute="centerX" secondItem="H4l-Eu-Mxv" secondAttribute="centerX" id="9yh-hd-hxF"/>
+                            <constraint firstItem="cxt-B4-4MG" firstAttribute="leading" secondItem="H4l-Eu-Mxv" secondAttribute="leading" constant="70" id="Dcq-oH-5pg"/>
+                            <constraint firstItem="H4l-Eu-Mxv" firstAttribute="trailing" secondItem="UTj-ON-RS7" secondAttribute="trailing" constant="20" id="Jog-89-wdH"/>
+                            <constraint firstItem="eFc-OR-BKw" firstAttribute="top" secondItem="jBL-7h-gEw" secondAttribute="bottom" constant="3" id="K81-Xa-A6a"/>
+                            <constraint firstItem="UTj-ON-RS7" firstAttribute="leading" secondItem="H4l-Eu-Mxv" secondAttribute="leading" constant="20" id="KI5-Od-VjF"/>
+                            <constraint firstItem="H4l-Eu-Mxv" firstAttribute="trailing" secondItem="eFc-OR-BKw" secondAttribute="trailing" constant="70" id="KP1-rF-yYs"/>
+                            <constraint firstItem="fe0-80-cYH" firstAttribute="top" secondItem="H4l-Eu-Mxv" secondAttribute="top" id="SnV-tq-nqk"/>
+                            <constraint firstItem="H4l-Eu-Mxv" firstAttribute="trailing" secondItem="jBL-7h-gEw" secondAttribute="trailing" constant="70" id="URP-RU-63s"/>
+                            <constraint firstItem="fe0-80-cYH" firstAttribute="leading" secondItem="H4l-Eu-Mxv" secondAttribute="leading" constant="30" id="a9F-7S-DMW"/>
+                            <constraint firstItem="Qxb-kV-LO8" firstAttribute="top" secondItem="UTj-ON-RS7" secondAttribute="bottom" constant="7.5" id="d2q-pp-KDY"/>
+                            <constraint firstItem="jBL-7h-gEw" firstAttribute="leading" secondItem="H4l-Eu-Mxv" secondAttribute="leading" constant="70" id="gp1-MR-WHi"/>
+                            <constraint firstItem="UTj-ON-RS7" firstAttribute="top" secondItem="H4l-Eu-Mxv" secondAttribute="top" constant="60" id="shO-wL-o35"/>
+                            <constraint firstItem="cxt-B4-4MG" firstAttribute="width" secondItem="eFc-OR-BKw" secondAttribute="width" id="sq8-9S-ulL"/>
+                            <constraint firstItem="jBL-7h-gEw" firstAttribute="top" secondItem="Qxb-kV-LO8" secondAttribute="bottom" constant="7.5" id="yJT-5x-AuA"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="반숙 1" image="heart.fill" catalog="system" id="JfG-xU-2Yd"/>
+                    <navigationItem key="navigationItem" title="계란 삶기" id="dNM-z8-dDN">
+                        <barButtonItem key="rightBarButtonItem" title="고구마" id="Z0R-4X-2D4">
+                            <color key="tintColor" red="0.77970749139999995" green="0.081201963129999999" blue="0.76994520430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pauseButton" destination="cxt-B4-4MG" id="ikb-u6-GJ0"/>
+                        <outlet property="startButton" destination="jBL-7h-gEw" id="PTx-8f-k9z"/>
+                        <outlet property="timerLabel" destination="Qxb-kV-LO8" id="GOt-95-mTL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L2I-8A-cs2" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-384" y="-538"/>
+        </scene>
+        <!--계란 삶기 반숙 2-->
+        <scene sceneID="vHJ-y6-NmX">
+            <objects>
+                <viewController id="kyp-tC-7Jo" userLabel="계란 삶기 반숙 2" customClass="Egg2ViewController" customModule="Timger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q2W-Qf-85m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="u5s-Tj-b2X">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="UmC-Wv-cRY">
+                                <rect key="frame" x="20" y="104" width="374" height="494.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UmC-Wv-cRY" secondAttribute="height" multiplier="3:4" constant="3" id="8rg-vb-CCP"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5r-pl-Wp5">
+                                <rect key="frame" x="30" y="44" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="HTM-pY-eDX"/>
+                                    <constraint firstAttribute="height" constant="40" id="kbY-c1-VMk"/>
+                                </constraints>
+                                <state key="normal" image="idea"/>
+                                <connections>
+                                    <segue destination="V69-nO-zjR" kind="presentation" id="dhW-fb-P55"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ZX-5K-Zdy">
+                                <rect key="frame" x="127.5" y="606" width="159.5" height="60.5"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="53"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1C-g2-CGp">
+                                <rect key="frame" x="70" y="674" width="274" height="53"/>
+                                <color key="backgroundColor" red="0.99656456709999997" green="0.93597990269999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="31"/>
+                                <state key="normal" title="START!!">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonTapped:" destination="kyp-tC-7Jo" eventType="touchUpInside" id="lib-sy-Rv1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aK7-Nd-eAR">
+                                <rect key="frame" x="70" y="731" width="130" height="53"/>
+                                <color key="backgroundColor" red="0.068906702099999995" green="0.022085538129999999" blue="0.97287529709999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="31"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pauseButtonTapped:" destination="kyp-tC-7Jo" eventType="touchUpInside" id="v3T-fS-f9s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udH-hY-TNr">
+                                <rect key="frame" x="214" y="730" width="130" height="53"/>
+                                <color key="backgroundColor" red="0.93437337880000004" green="0.037854507570000001" blue="0.081797920169999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="NrW-dR-YL5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="31"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.99990183119999998" green="1" blue="0.99987989659999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButtonTapped:" destination="kyp-tC-7Jo" eventType="touchUpInside" id="9lo-xg-qmb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ocd-DG-o2v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aK7-Nd-eAR" firstAttribute="top" secondItem="V1C-g2-CGp" secondAttribute="bottom" constant="4" id="6Wl-9Y-G0d"/>
+                            <constraint firstItem="aK7-Nd-eAR" firstAttribute="leading" secondItem="ocd-DG-o2v" secondAttribute="leading" constant="70" id="73Y-ux-ohF"/>
+                            <constraint firstItem="UmC-Wv-cRY" firstAttribute="top" secondItem="ocd-DG-o2v" secondAttribute="top" constant="60" id="EsT-OD-xRv"/>
+                            <constraint firstItem="V1C-g2-CGp" firstAttribute="top" secondItem="0ZX-5K-Zdy" secondAttribute="bottom" constant="7.5" id="OU8-8l-ftS"/>
+                            <constraint firstItem="aK7-Nd-eAR" firstAttribute="width" secondItem="udH-hY-TNr" secondAttribute="width" id="SKz-Rz-Tmy"/>
+                            <constraint firstItem="UmC-Wv-cRY" firstAttribute="leading" secondItem="ocd-DG-o2v" secondAttribute="leading" constant="20" id="Sd3-j0-Fai"/>
+                            <constraint firstItem="0ZX-5K-Zdy" firstAttribute="top" secondItem="UmC-Wv-cRY" secondAttribute="bottom" constant="7.5" id="UDZ-EO-K5w"/>
+                            <constraint firstItem="ocd-DG-o2v" firstAttribute="trailing" secondItem="UmC-Wv-cRY" secondAttribute="trailing" constant="20" id="ZLZ-Vl-aPh"/>
+                            <constraint firstItem="o5r-pl-Wp5" firstAttribute="leading" secondItem="ocd-DG-o2v" secondAttribute="leading" constant="30" id="fhs-5H-K2I"/>
+                            <constraint firstItem="0ZX-5K-Zdy" firstAttribute="centerX" secondItem="ocd-DG-o2v" secondAttribute="centerX" id="fpA-xb-pUH"/>
+                            <constraint firstItem="o5r-pl-Wp5" firstAttribute="top" secondItem="ocd-DG-o2v" secondAttribute="top" id="kNy-zn-RFN"/>
+                            <constraint firstItem="ocd-DG-o2v" firstAttribute="trailing" secondItem="udH-hY-TNr" secondAttribute="trailing" constant="70" id="kVf-rD-jQA"/>
+                            <constraint firstItem="ocd-DG-o2v" firstAttribute="trailing" secondItem="V1C-g2-CGp" secondAttribute="trailing" constant="70" id="lPZ-HU-Hrf"/>
+                            <constraint firstItem="V1C-g2-CGp" firstAttribute="leading" secondItem="ocd-DG-o2v" secondAttribute="leading" constant="70" id="mat-LY-oJm"/>
+                            <constraint firstItem="udH-hY-TNr" firstAttribute="top" secondItem="V1C-g2-CGp" secondAttribute="bottom" constant="3" id="rb8-mS-Lj4"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="반숙 2" image="heart.fill" catalog="system" id="thI-KD-x2u" userLabel="반숙 2"/>
+                    <navigationItem key="navigationItem" title="계란 삶기" id="f3Y-aU-xIL">
+                        <barButtonItem key="rightBarButtonItem" title="고구마" id="vhW-LQ-vtv">
+                            <color key="tintColor" red="0.77970749139999995" green="0.081201963129999999" blue="0.76994520430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pauseButton" destination="aK7-Nd-eAR" id="kYZ-oj-KuP"/>
+                        <outlet property="startButton" destination="V1C-g2-CGp" id="oY2-Pj-tf7"/>
+                        <outlet property="timerLabel" destination="0ZX-5K-Zdy" id="5Wl-UL-2Ih"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wvs-rm-tvi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-384" y="174"/>
+        </scene>
+        <!--계란 삶기 반숙 3-->
+        <scene sceneID="Yfb-Zt-fPs">
+            <objects>
+                <viewController id="fzK-r8-H4Z" userLabel="계란 삶기 반숙 3" customClass="Egg3ViewController" customModule="Timger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gVL-qG-Q74">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="SuG-Rg-KQE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="Syr-44-Zvm">
+                                <rect key="frame" x="20" y="104" width="374" height="494.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Syr-44-Zvm" secondAttribute="height" multiplier="3:4" constant="3" id="Tkg-EE-mIN"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dij-bd-h9A">
+                                <rect key="frame" x="30" y="44" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="YrU-oz-kiS"/>
+                                    <constraint firstAttribute="width" constant="40" id="wJb-AV-3xj"/>
+                                </constraints>
+                                <state key="normal" image="idea"/>
+                                <connections>
+                                    <segue destination="V69-nO-zjR" kind="presentation" id="4OB-lL-Ps0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xz4-Ae-OHw">
+                                <rect key="frame" x="127.5" y="606" width="159.5" height="60.5"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="53"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oce-3n-TPE">
+                                <rect key="frame" x="70" y="674" width="274" height="53"/>
+                                <color key="backgroundColor" red="0.99656456709999997" green="0.93597990269999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="31"/>
+                                <state key="normal" title="START!!">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonTapped:" destination="fzK-r8-H4Z" eventType="touchUpInside" id="FM5-Ez-9Vj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOo-eg-SbT">
+                                <rect key="frame" x="70" y="731" width="130" height="53"/>
+                                <color key="backgroundColor" red="0.068906702099999995" green="0.022085538129999999" blue="0.97287529709999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="31"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pauseButtonTapped:" destination="fzK-r8-H4Z" eventType="touchUpInside" id="7zf-r1-VNM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbf-o1-6pE">
+                                <rect key="frame" x="214" y="730" width="130" height="53"/>
+                                <color key="backgroundColor" red="0.93437337880000004" green="0.037854507570000001" blue="0.081797920169999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="uGM-RZ-4Xg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="31"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.99990183119999998" green="1" blue="0.99987989659999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButtonTapped:" destination="fzK-r8-H4Z" eventType="touchUpInside" id="k1A-U1-BMG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="V1w-5n-Hot"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="V1w-5n-Hot" firstAttribute="trailing" secondItem="Syr-44-Zvm" secondAttribute="trailing" constant="20" id="1u9-VS-tA0"/>
+                            <constraint firstItem="UOo-eg-SbT" firstAttribute="leading" secondItem="V1w-5n-Hot" secondAttribute="leading" constant="70" id="4TR-iy-DMQ"/>
+                            <constraint firstItem="Syr-44-Zvm" firstAttribute="top" secondItem="V1w-5n-Hot" secondAttribute="top" constant="60" id="6T1-b4-29c"/>
+                            <constraint firstItem="UOo-eg-SbT" firstAttribute="width" secondItem="Wbf-o1-6pE" secondAttribute="width" id="9Lx-QO-hIx"/>
+                            <constraint firstItem="Xz4-Ae-OHw" firstAttribute="centerX" secondItem="V1w-5n-Hot" secondAttribute="centerX" id="BjN-0i-WHx"/>
+                            <constraint firstItem="UOo-eg-SbT" firstAttribute="top" secondItem="oce-3n-TPE" secondAttribute="bottom" constant="4" id="ItS-iI-6eT"/>
+                            <constraint firstItem="oce-3n-TPE" firstAttribute="leading" secondItem="V1w-5n-Hot" secondAttribute="leading" constant="70" id="fxz-ee-IHa"/>
+                            <constraint firstItem="dij-bd-h9A" firstAttribute="top" secondItem="V1w-5n-Hot" secondAttribute="top" id="j6w-bA-ofm"/>
+                            <constraint firstItem="dij-bd-h9A" firstAttribute="leading" secondItem="V1w-5n-Hot" secondAttribute="leading" constant="30" id="my4-gH-FkM"/>
+                            <constraint firstItem="Syr-44-Zvm" firstAttribute="leading" secondItem="V1w-5n-Hot" secondAttribute="leading" constant="20" id="nsZ-2W-HyF"/>
+                            <constraint firstItem="Wbf-o1-6pE" firstAttribute="top" secondItem="oce-3n-TPE" secondAttribute="bottom" constant="3" id="pQo-0r-TFw"/>
+                            <constraint firstItem="Xz4-Ae-OHw" firstAttribute="top" secondItem="Syr-44-Zvm" secondAttribute="bottom" constant="7.5" id="pRn-QI-k3R"/>
+                            <constraint firstItem="oce-3n-TPE" firstAttribute="top" secondItem="Xz4-Ae-OHw" secondAttribute="bottom" constant="7.5" id="paW-KH-ACh"/>
+                            <constraint firstItem="V1w-5n-Hot" firstAttribute="trailing" secondItem="Wbf-o1-6pE" secondAttribute="trailing" constant="70" id="q5J-3z-NFp"/>
+                            <constraint firstItem="V1w-5n-Hot" firstAttribute="trailing" secondItem="oce-3n-TPE" secondAttribute="trailing" constant="70" id="uxE-0j-KtR"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="완숙" image="heart.fill" catalog="system" id="9ip-1M-Z8m" userLabel="완숙란"/>
+                    <navigationItem key="navigationItem" title="계란 삶기" id="dRP-0m-pBN">
+                        <barButtonItem key="rightBarButtonItem" title="고구마" id="Npl-6a-jGe">
+                            <color key="tintColor" red="0.77970749139999995" green="0.081201963129999999" blue="0.76994520430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pauseButton" destination="UOo-eg-SbT" id="LaV-8b-Lrs"/>
+                        <outlet property="startButton" destination="oce-3n-TPE" id="3ao-Bq-H1A"/>
+                        <outlet property="timerLabel" destination="Xz4-Ae-OHw" id="pgh-gv-mSc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qrG-rD-sM3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-428" y="847"/>
+        </scene>
+        <!--고구마-->
+        <scene sceneID="iYP-uw-iZA">
+            <objects>
+                <viewController id="giy-nO-r4a" userLabel="고구마" customClass="SweetPotatoViewController" customModule="Timger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KiV-KD-hVt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="dg5-6z-V99">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sweetphotato" translatesAutoresizingMaskIntoConstraints="NO" id="Zkj-Eq-Unn">
+                                <rect key="frame" x="20" y="171" width="374" height="494.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="고 구 마" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpV-eY-nVp">
+                                <rect key="frame" x="107" y="108" width="200" height="55"/>
+                                <color key="backgroundColor" red="0.9573699832" green="0.92991441490000004" blue="0.83761125800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="1k0-uu-Zd9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="31"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJp-zd-xaX">
+                                <rect key="frame" x="30" y="44" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3oP-8F-VIS"/>
+                                    <constraint firstAttribute="width" constant="40" id="ejX-yo-kfx"/>
+                                </constraints>
+                                <state key="normal" image="idea"/>
+                                <connections>
+                                    <segue destination="wWl-92-8tv" kind="presentation" id="Xve-TA-sik"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g83-NX-GYW">
+                                <rect key="frame" x="70" y="674" width="274" height="53"/>
+                                <color key="backgroundColor" red="0.99656456709999997" green="0.93597990269999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="FBW-64-I6R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="31"/>
+                                <state key="normal" title="START!!">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonTapped:" destination="giy-nO-r4a" eventType="touchUpInside" id="G9j-77-dAs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gk5-W5-JsD">
+                                <rect key="frame" x="70" y="731" width="130" height="53"/>
+                                <color key="backgroundColor" red="0.068906702099999995" green="0.022085538129999999" blue="0.97287529709999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="X06-vW-3yV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="31"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pauseButtonTapped:" destination="giy-nO-r4a" eventType="touchUpInside" id="JcT-rW-kgv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDx-3Y-pXD">
+                                <rect key="frame" x="214" y="730" width="130" height="53"/>
+                                <color key="backgroundColor" red="0.93437337880000004" green="0.037854507570000001" blue="0.081797920169999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="IY6-ZD-U8G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="31"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.99990183119999998" green="1" blue="0.99987989659999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButtonTapped:" destination="giy-nO-r4a" eventType="touchUpInside" id="BKl-Uo-niU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hjz-Jp-B0G">
+                                <rect key="frame" x="117" y="605.5" width="180" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="SxD-Pr-fAF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="53"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4gs-dB-pmn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BDx-3Y-pXD" firstAttribute="top" secondItem="g83-NX-GYW" secondAttribute="bottom" constant="3" id="1mk-Rg-Ksc"/>
+                            <constraint firstItem="gk5-W5-JsD" firstAttribute="width" secondItem="BDx-3Y-pXD" secondAttribute="width" id="5bc-70-Koc"/>
+                            <constraint firstItem="xpV-eY-nVp" firstAttribute="centerX" secondItem="Zkj-Eq-Unn" secondAttribute="centerX" id="8rQ-AD-T75"/>
+                            <constraint firstItem="4gs-dB-pmn" firstAttribute="trailing" secondItem="Zkj-Eq-Unn" secondAttribute="trailing" constant="20" id="9kU-8L-S8w"/>
+                            <constraint firstItem="4gs-dB-pmn" firstAttribute="bottom" secondItem="gk5-W5-JsD" secondAttribute="bottom" constant="29" id="HD3-dJ-uCA"/>
+                            <constraint firstItem="VJp-zd-xaX" firstAttribute="leading" secondItem="4gs-dB-pmn" secondAttribute="leading" constant="30" id="LSF-O9-Qmv"/>
+                            <constraint firstItem="xpV-eY-nVp" firstAttribute="top" secondItem="4gs-dB-pmn" secondAttribute="top" constant="64" id="P6S-zb-c6x"/>
+                            <constraint firstItem="Zkj-Eq-Unn" firstAttribute="top" secondItem="xpV-eY-nVp" secondAttribute="bottom" constant="8" symbolic="YES" id="Shk-NO-ECu"/>
+                            <constraint firstItem="Hjz-Jp-B0G" firstAttribute="centerX" secondItem="4gs-dB-pmn" secondAttribute="centerX" id="TpT-EY-smV"/>
+                            <constraint firstItem="4gs-dB-pmn" firstAttribute="trailing" secondItem="g83-NX-GYW" secondAttribute="trailing" constant="70" id="UNO-lB-oXJ"/>
+                            <constraint firstItem="dg5-6z-V99" firstAttribute="centerX" secondItem="g83-NX-GYW" secondAttribute="centerX" id="URy-8R-NLa"/>
+                            <constraint firstItem="g83-NX-GYW" firstAttribute="top" secondItem="Hjz-Jp-B0G" secondAttribute="bottom" constant="7.5" id="VKd-3O-4zb"/>
+                            <constraint firstAttribute="bottom" secondItem="dg5-6z-V99" secondAttribute="bottom" id="VnF-K0-F84"/>
+                            <constraint firstItem="4gs-dB-pmn" firstAttribute="trailing" secondItem="BDx-3Y-pXD" secondAttribute="trailing" constant="70" id="aCf-Dg-eKU"/>
+                            <constraint firstItem="dg5-6z-V99" firstAttribute="top" secondItem="KiV-KD-hVt" secondAttribute="top" id="anm-Mf-DpD"/>
+                            <constraint firstItem="gk5-W5-JsD" firstAttribute="leading" secondItem="4gs-dB-pmn" secondAttribute="leading" constant="70" id="azl-oe-m0h"/>
+                            <constraint firstItem="Zkj-Eq-Unn" firstAttribute="leading" secondItem="4gs-dB-pmn" secondAttribute="leading" constant="20" id="cbs-5l-Pd8"/>
+                            <constraint firstItem="dg5-6z-V99" firstAttribute="leading" secondItem="KiV-KD-hVt" secondAttribute="leading" id="eqi-f4-uvs"/>
+                            <constraint firstItem="VJp-zd-xaX" firstAttribute="top" secondItem="4gs-dB-pmn" secondAttribute="top" id="jMf-eo-oJa"/>
+                            <constraint firstItem="g83-NX-GYW" firstAttribute="top" secondItem="Zkj-Eq-Unn" secondAttribute="bottom" constant="8.5" id="oao-mW-yZS"/>
+                            <constraint firstItem="g83-NX-GYW" firstAttribute="leading" secondItem="4gs-dB-pmn" secondAttribute="leading" constant="70" id="scz-Mm-RGG"/>
+                            <constraint firstItem="xpV-eY-nVp" firstAttribute="leading" secondItem="4gs-dB-pmn" secondAttribute="leading" constant="107" id="xCt-bd-d2b"/>
+                            <constraint firstItem="gk5-W5-JsD" firstAttribute="top" secondItem="g83-NX-GYW" secondAttribute="bottom" constant="4" id="xxL-nS-1Wf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="고구마" image="heart.fill" catalog="system" id="L4A-fG-CEO" userLabel="완숙란"/>
+                    <navigationItem key="navigationItem" title="계란 삶기" id="UT8-Ps-4nm">
+                        <barButtonItem key="rightBarButtonItem" title="고구마" id="uwx-Jm-PHH">
+                            <color key="tintColor" red="0.77970749139999995" green="0.081201963129999999" blue="0.76994520430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pauseButton" destination="gk5-W5-JsD" id="yem-wK-pyJ"/>
+                        <outlet property="startButton" destination="g83-NX-GYW" id="zNB-6t-TUe"/>
+                        <outlet property="timerLabel" destination="Hjz-Jp-B0G" id="hxH-Iz-Vmv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zHu-No-Tt6" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-430.43478260869568" y="1599.7767857142856"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="4OB-lL-Ps0"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="1" width="454" height="707"/>
+        <image name="2" width="454" height="707"/>
+        <image name="3" width="454" height="707"/>
+        <image name="BoilingWaterWithEgg" width="2417" height="2791"/>
+        <image name="background2" width="1840" height="1899"/>
+        <image name="happySweet" width="1200" height="1200"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="idea" width="512" height="512"/>
+        <image name="sweetphotato" width="592" height="494"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
